@@ -1,0 +1,132 @@
+body{
+    margin:0;
+    padding:0;
+    height: 100vh;
+    background-color: #1A1B21;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+   
+
+}
+
+@media(min-width:35rem){
+    .picChim{
+        width: 100%;
+    }
+}
+
+@media(min-width:45rem){
+    main{
+        display: grid;
+        width: 100%;
+        grid-template-areas: "image content"
+                            "image footer";
+        grid-template-columns: 50% auto;
+        gap: 1rem;
+        margin: 3.5rem 2rem;
+
+    }
+    .container{ 
+        grid-area: content;
+        padding: 1rem;
+        margin-right: 5rem;
+    }
+
+    .picChim{
+        grid-area: image;
+    }
+    footer{
+        grid-area: footer;
+        margin-right: 5rem;
+
+    }
+}
+
+
+.container{
+    padding-inline: 1rem;
+    margin-bottom: 1em;
+    
+}
+
+.person-info{
+    text-align: center;
+}
+
+.person-info > :first-child{
+    margin-top: -0.1rem;
+    color: #FFFFFF;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.person-info > .position{
+    color:#F3BF99;
+    margin-top: -1.5rem;
+}
+.person-info > :last-child{
+    margin-top: -0.5rem;
+    font-size: 15px;
+    font-style: italic;
+}
+
+.picChim{
+    width: 100%;
+}
+
+.info--buttons{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+}
+
+.info--icon-button{
+    width: 12%;
+    margin-right: 0.5rem;
+}
+
+footer{
+    background-color:rgba(224, 209, 196, 0.637);
+    display: flex;
+    padding-left: 2rem;
+ 
+}
+
+.info--icon{
+    width: 35%;
+    padding: 0.5rem;
+}
+
+.email-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    color: black;
+    padding: 0.5rem;
+    border-radius: 5%;
+    width: 40%;
+    margin-right: 2rem;
+    text-decoration: none;
+}
+
+.linked-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #5093E2;
+    color:white;
+    padding: 0.5rem;
+    border-radius: 5%;
+    width: 40%;
+    text-decoration: none;
+}
+
+.more-info{
+    margin-bottom: -0.7rem;
+    font-size: 18px;
+}
+
