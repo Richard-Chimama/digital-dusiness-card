@@ -1,6 +1,5 @@
 import ReactDOM from "react-dom"
 import PicChim from "./images/chim02.jpeg"
-import PicChimPotrait from "./images/chime03.jpeg"
 import linkendIn from "./images/linkedin.png"
 import instagram from "./images/instagram.png"
 import github from "./images/github.png"
@@ -28,7 +27,9 @@ export default function App(){
                         <p>rich.chime@gmail.com</p>
                     </div>
                     <div className="info--buttons">
+                        {/*eslint-disable-next-line*/ }
                         <a rel="external opener" className="email-button" href="mailto:rich.chime@gmail.com" target="_blank"><img className="info--icon-button " src={email}/><span>Email</span></a>
+                        {/*eslint-disable-next-line*/ }
                         <a rel="external opener" className="linked-button" href="https://www.linkedin.com/in/richard-chimama-a8aa55148/" target="_blank"><img className="info--icon-button" src={linkendIn}/><span>LinkednIn</span></a>
                     </div>
                     <div>
@@ -50,9 +51,13 @@ export default function App(){
                      </div>
             </div>
             <footer>
+                    {/*eslint-disable-next-line*/ }
                     <a rel="external" href="https://twitter.com/chime_rich" target="_blank"><img className="info--icon "  alt="twitter" src={twitter}/></a>
+                    {/*eslint-disable-next-line*/ }
                     <a rel="external" href="https://www.facebook.com/chime.salvadollar/" target="_blank"><img className="info--icon "  alt="facebook" src={facebook}/></a>
+                    {/*eslint-disable-next-line*/ }
                     <a rel="external" href="https://instagram.com/rich_chim04?utm_medium=copy_link" target="_blank"><img className="info--icon "  alt="instagram" src={instagram}/></a>
+                    {/*eslint-disable-next-line*/ }
                     <a rel="external" href="https://github.com/Richard-Chimama" target="_blank"><img className="info--icon "  alt="github" src={github}/></a>
                 </footer>
         </main>
